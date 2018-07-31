@@ -1,0 +1,43 @@
+/*
+CSS to be used by contact.html
+*/
+
+.column1 {
+    background-color: lightblue;
+    float: left;
+    padding: 10px;
+    height: auto;
+    margin: 5px;
+}
+
+.containerleft, .containerright {
+    width: 10%;
+}
+
+.containermiddle {
+    width: 70%;
+}
+
+.formlabel {
+    display: block;
+    width: 100px;
+}
+
+.formcss {
+    width: 70%;
+    padding: 12px;
+    border: 1px dotted green;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.formbutton {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    cursor: pointer;
+}

@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+div {background-color: yellow
+
+}
+*/
+
+.topnav {
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(255, 153, 0);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* for menu bar
+*/
+.topnav a:hover {
+    background-color: #dddddd;
+    color: blue;
+}
+
+.topnav a.active {
+    background-color: yellow;
+    color: blueviolet;
+}
+
+.topnav .search-container button:hover {
+    background: #cccccc;
+}
+
+@media screen and (max-width: 600px) {
+
+.topnav .search-container {
+    float: none;
+}
+}
+
+.topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+
+/* if screen scaled to smaller than 600px then do this media,  you can set media size for different phones, ipad etc
+*/
+
+/* any topnav that has a input required will have this style
+*/
+.topnav input[type=text], .topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+/*search-container class which is nested in topnav class (nested CSS).  Dont have to do nested,  get just give a distinct name
+*/
+.topnav .search-container {
+    float: right;
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+    .footer {
+    position: fixed;
+    bottom: 0;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: red;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.footer a{
+    text-decoration: none;
+    /* hyperlinks that has a underline disappears
+    */
+}
+
+.bottomcolumn {
+    text-align: centre;
+    padding: 10px;
+}
+/* add a style to hyperlink so that icon space out,  use class for icon and use margin for spacing
+*/
+
+.row {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+/* what happens after the row is rendered,  no content inside and clear alignment and give it display table structure.
+*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    background-color: cyan;
+}
+
+.left {
+    width: 15%;
+    text-align: center;
+}
+
+.right {
+    width: 75%;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.lastdiv {
+    margin-bottom: 150px;
+}
+/* add css to all element id indicated,  apply to icon line <i>
+*/
+#fb, #gl, #sc, #ig {
+    margin: 10px 10px 10px 10px;
+    color: aqua;
+}
+
+.roworigin {
+    background-color: yellow;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    clear: both;
+    /* clear render and form table
+*/
+}
+
+.twocolumn {
+    float: left;
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid green;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* alternative row different color
+*/
+}
+
+a:link {
+    color: lightgreen;
+    text-decoration: none;
+    background-color: transparent;
+    /* change color of hyperlinks
+*/
+}
+
+a:hover {
+    color: red;
+    background-color: aquamarine;
+    text-decoration: underline;
+    /* change color of hover over hyperlinks
+*/
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    /* change color of hyperlinks after they have been visited
+*/
+}
