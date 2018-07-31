@@ -63,7 +63,6 @@ div {background-color: yellow
     padding: 6px;
     margin-top: 8px;
     margin-right: 0px;
-    margin-bottom: 8px;
     font-size: 17px;
 }
 /*search-container class which is nested in topnav class (nested CSS).  Dont have to do nested,  get just give a distinct name
