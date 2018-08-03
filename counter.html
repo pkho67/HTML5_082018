@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Countdown Timer</title>
+    <script lang="javascript" type="text/javascript">
+    
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+
+            setInterval(function() {
+                // 10 digits, % is modulus takes the remainder of seconds in the minute
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.textContent = minutes + ":" + seconds;
+
+                timer = timer - 1;
+
+                if (timer < 0) {
+                    timer = duration; 
+                }
+            }, 1000);
+        }
+
+        window.onload = function() {
+            var fourMinutes = 60 * 4;
+            var disp = document.querySelector('#counttime');
+            startTimer(fourMinutes, disp);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Registration closes in 
+        <span id="counttime">04:00</span> minutes
+    </div>
+</body>
+</html>
